@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cytronix Industry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Watermark logo behind everything */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('logo.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 300px 300px;
+      opacity: 0.07; /* adjust transparency */
+      pointer-events: none; /* so clicks pass through */
+      z-index: 0;
+      width: 300px;
+      height: 300px;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00ff99;
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #00ff99;
+      text-align: center;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00ff99aa;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #00ffcc;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Cytronix Industry</div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Welcome to Cytronix Industry</h2>
+    <p class="intro">We are a collective of developers and cyber activists building innovative tools in Cybersecurity, Artificial Intelligence, and online applications. Join us in creating smarter, safer technology for the future.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Our Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-title">Cybersecurity Toolkits</div>
+        <div class="project-description">Powerful tools for penetration testing, bug bounty hunting, and digital forensics — built by experts, for ethical hackers.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Online Tools</div>
+        <div class="project-description">Easy-to-use online applications for scanning, analyzing, and automating tasks across web and network infrastructure.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">AI Assistant</div>
+        <div class="project-description">Smart systems using AI and machine learning to assist in reconnaissance, vulnerability analysis, and automation tasks.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Application</div>
+        <div class="project-description">Innovative Android applications developed with cutting-edge technology to enhance mobile user experiences and security.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <p class="intro">Cytronix Industry is dedicated to advancing security through innovation. Our team works on both open-source and private projects aimed at transforming how security professionals work and protect systems.</p>
+  </section>
+
+</body>
+</html>
